@@ -1,0 +1,11 @@
+.header {
+    max-width: 100%;
+    height: 100vh;
+
+    //background-color: $color-blue-dark;
+    background-image: url(../../img/header-image.png); //falta agregarle brillos y sombras
+    background-size: cover;
+
+    &_content {
+    }
+}
