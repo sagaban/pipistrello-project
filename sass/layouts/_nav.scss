@@ -1,10 +1,13 @@
 .header_navbar {
-    max-width: 100%;
+    min-width: 100%; //por alguna razón con min-width no se rompe todo al ponerle position fixed
     height: 11.2rem;
 
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
 
     /////////////////LOGO
     &-logo--box {
@@ -20,8 +23,7 @@
 
     ///////////HAMBURGUESA
     .header_navbar-hamburguer {
-        height: 3.2rem;
-        margin: 4rem 14rem;
+        margin-right: 4rem;
 
         #toggle {
             display: none;
@@ -34,8 +36,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-
-            z-index: 2000;
         }
 
         .line-1 {
@@ -89,24 +89,16 @@
 
     //////////////////MENÚ
     &-background {
-        z-index: 1000;
         background-color: $color-blue-dark;
-        height: 3rem;
-        width: 3rem;
+        width: 0;
+
+        position: fixed;
+        top: 0;
+        right: 0;
     }
 
     &-menu {
-        z-index: 1500;
-        opacity: 0;
-        width: 0;
-
-        height: 100vh;
-
         &--list {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
 
         &--item {
