@@ -87,23 +87,55 @@
         }
     }
 
-    //////////////////MENÚ
-    &-background {
-        background-color: $color-blue-dark;
-        width: 0;
-
-        position: fixed;
-        top: 0;
-        right: 0;
-    }
-
+    //////////////////MENÚ DESPLEGABLE
     &-menu {
-        &--list {
-        }
+        background-image: linear-gradient(85deg, $color-black, transparent);
+        text-align: center;
 
-        &--item {
-            &-link {
+        opacity: 0;
+        height: 0;
+        width: 0;
+        display: none;
+
+        transition: all 1s ease 1s;
+
+        &--list {
+            width: 100%;
+            padding: 10% 0;
+            list-style: none;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            &-item {
+                margin: 1rem;
+
+                .link {
+                    &:link,
+                    &:visited {
+                        font-size: 2.5rem;
+                        color: $color-white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        text-shadow: 1px 1px 12px $color-blue-light;
+                    }
+
+                    &:active {
+                        color: $color-blue-light;
+                    }
+                }
             }
         }
+    }
+
+    &-hamburguer-checkbox:checked ~ &-menu {
+        width: 100%;
+        opacity: 1;
+        height: 32.68rem;
+        position: absolute;
+        top: 11.2rem;
+        left: 0;
+        display: unset;
     }
 }
