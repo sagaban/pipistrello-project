@@ -9,21 +9,34 @@
 
     position: fixed;
 
+    @include respond(tab-port) {
+        justify-content: center;
+    }
+
     /////////////////LOGO
     &-logo--box {
-        width: 20.6rem;
-        height: 7.8rem;
         margin: 1.7rem;
     }
 
     &-logo {
         width: 18.6rem;
         height: 7.8rem;
+
+        @include respond(tab-port) {
+            width: 21.6rem;
+            height: 9rem;
+        }
     }
 
     ///////////HAMBURGUESA
     .header_navbar-hamburguer {
+        width: 5rem;
+        height: 5rem;
         margin-right: 4rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         #toggle {
             display: none;
@@ -40,11 +53,15 @@
 
         .line-1 {
             height: 2.5px;
-            width: 25px;
+            width: 2.5rem;
             background-color: $color-white;
             opacity: 1;
 
             transition: all 0.3s;
+
+            @include respond(tab-port) {
+                width: 2.9rem;
+            }
         }
 
         .line-2 {
@@ -52,11 +69,15 @@
             left: 5px;
 
             height: 2.5px;
-            width: 20px;
+            width: 2rem;
             background-color: $color-white;
             opacity: 1;
 
             transition: all 0.3s;
+
+            @include respond(tab-port) {
+                width: 2.32rem;
+            }
         }
 
         .line-3 {
@@ -64,11 +85,15 @@
             left: 10px;
 
             height: 2.5px;
-            width: 15px;
+            width: 1.5rem;
             background-color: $color-white;
             opacity: 1;
 
             transition: all 0.3s;
+
+            @include respond(tab-port) {
+                width: 1.74rem;
+            }
         }
 
         #toggle:checked ~ .navigation-button .navigation-line {
@@ -83,23 +108,25 @@
             &:nth-child(3) {
                 transform: translateY(-8px) translateX(-10px) rotate(45deg);
                 width: 25px;
+
+                @include respond(tab-port) {
+                    width: 2.9rem;
+                }
             }
         }
     }
 
     //////////////////MENÚ DESPLEGABLE
     &-menu {
-        background-image: linear-gradient(85deg, $color-black, transparent);
         text-align: center;
-
         opacity: 0;
-        height: 0;
         width: 0;
         display: none;
 
         transition: all 1s ease 1s;
 
         &--list {
+            background-image: linear-gradient(85deg, $color-black, transparent);
             width: 100%;
             padding: 10% 0;
             list-style: none;
@@ -107,6 +134,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            @include respond(tab-land) {
+                padding: 5% 0;
+            }
 
             &-item {
                 margin: 1rem;
@@ -119,6 +150,10 @@
                         text-transform: uppercase;
                         text-decoration: none;
                         text-shadow: 1px 1px 12px $color-blue-light;
+
+                        @include respond(tab-land) {
+                            line-height: 1.5;
+                        }
                     }
 
                     &:active {
@@ -132,7 +167,6 @@
     &-hamburguer-checkbox:checked ~ &-menu {
         width: 100%;
         opacity: 1;
-        height: 32.68rem;
         position: absolute;
         top: 11.2rem;
         left: 0;
