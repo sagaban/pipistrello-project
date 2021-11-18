@@ -10,7 +10,7 @@
     position: fixed;
 
     @include respond(desk-top) {
-        justify-content: center;
+        justify-content: end;
     }
 
     /////////////////LOGO
@@ -40,9 +40,29 @@
 
     ////////ICONOS SVG
     &-user {
-        &-icon {
+        width: 0;
+        height: 4rem;
+        opacity: 0;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @include respond(desk-top) {
+            width: 17rem;
+            opacity: 1;
+            margin-left: 20%;
+            transform: translate(-20%);
+        }
+
+        &--box {
             width: 4rem;
             height: 4rem;
+        }
+
+        &-icon {
+            width: 2rem;
+            height: 2rem;
             fill: $color-white;
         }
     }
@@ -171,7 +191,6 @@
                         font-size: 2.5rem;
                         font-weight: 200;
                         color: $color-white;
-                        text-transform: uppercase;
                         text-decoration: none;
 
                         @include respond(tab-land) {
@@ -179,7 +198,7 @@
                         }
                     }
 
-                    &:active {
+                    &:hover {
                         color: $color-blue-light;
                     }
                 }
