@@ -9,13 +9,23 @@
 
     position: fixed;
 
-    @include respond(tab-port) {
+    @include respond(desk-top) {
         justify-content: center;
     }
 
     /////////////////LOGO
     &-logo--box {
-        margin: 1.7rem;
+        margin-left: 1.7rem;
+
+        @include respond(tab-port) {
+            margin-left: 50%;
+            transform: translate(-50%);
+        }
+
+        @include respond(desk-top) {
+            margin-left: 1.7rem;
+            transform: translate(0);
+        }
     }
 
     &-logo {
@@ -32,7 +42,7 @@
     .header_navbar-hamburguer {
         width: 5rem;
         height: 5rem;
-        margin-right: 4rem;
+        margin: 2rem;
 
         display: flex;
         justify-content: center;
@@ -114,6 +124,10 @@
                 }
             }
         }
+
+        @include respond(desk-top) {
+            display: none;
+        }
     }
 
     //////////////////MENÚ DESPLEGABLE
@@ -171,5 +185,37 @@
         top: 11.2rem;
         left: 0;
         display: unset;
+    }
+
+    /////////////////////////MENÚ DESKTOP
+    &-menu2 {
+        display: none;
+
+        @include respond(desk-top) {
+            display: unset;
+        }
+
+        &--list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            list-style: none;
+            height: 4.8rem;
+            width: 43.7rem;
+
+            &-item {
+                margin: 1rem;
+
+                .link {
+                    &:link,
+                    &:visited {
+                        font-size: 1.8rem;
+                        color: $color-white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
     }
 }
