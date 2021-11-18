@@ -38,6 +38,15 @@
         }
     }
 
+    ////////ICONOS SVG
+    &-user {
+        &-icon {
+            width: 4rem;
+            height: 4rem;
+            fill: $color-white;
+        }
+    }
+
     ///////////HAMBURGUESA
     .header_navbar-hamburguer {
         width: 5rem;
@@ -160,10 +169,10 @@
                     &:link,
                     &:visited {
                         font-size: 2.5rem;
+                        font-weight: 200;
                         color: $color-white;
                         text-transform: uppercase;
                         text-decoration: none;
-                        text-shadow: 1px 1px 12px $color-blue-light;
 
                         @include respond(tab-land) {
                             line-height: 1.5;
@@ -210,6 +219,7 @@
                 .link {
                     &:link,
                     &:visited {
+                        font-weight: 200;
                         font-size: 1.8rem;
                         color: $color-white;
                         text-decoration: none;
