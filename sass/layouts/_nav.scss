@@ -51,8 +51,8 @@
         @include respond(desk-top) {
             width: 17rem;
             opacity: 1;
-            margin-left: 20%;
-            transform: translate(-20%);
+            margin-left: 29%;
+            transform: translate(-29%);
         }
 
         &--box {
@@ -198,7 +198,7 @@
                         }
                     }
 
-                    &:hover {
+                    &:active {
                         color: $color-blue-light;
                     }
                 }
@@ -242,6 +242,16 @@
                         font-size: 1.8rem;
                         color: $color-white;
                         text-decoration: none;
+                    }
+
+                    &:hover {
+                        color: $color-blue-light;
+                        font-weight: 400;
+                    }
+
+                    &:active {
+                        color: $color-blue-light;
+                        font-weight: 400;
                     }
                 }
             }
