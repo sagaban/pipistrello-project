@@ -51,8 +51,8 @@
         @include respond(desk-top) {
             width: 17rem;
             opacity: 1;
-            margin-left: 29%;
-            transform: translate(-29%);
+            margin-left: 33%;
+            transform: translate(-33%);
         }
 
         &--box {
@@ -64,6 +64,11 @@
             width: 2rem;
             height: 2rem;
             fill: $color-white;
+
+            &:hover,
+            &:active {
+                fill: $color-pink;
+            }
         }
     }
 

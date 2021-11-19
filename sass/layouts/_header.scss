@@ -6,6 +6,7 @@
     //background-color: $color-blue-dark; (ponerlo cuando haga el poligono)
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     filter: brightness(1.5);
 
     @include respond(tab-port) {
