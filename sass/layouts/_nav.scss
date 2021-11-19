@@ -211,6 +211,10 @@
         }
     }
 
+    .link2 {
+        margin: 0 1.5rem;
+    }
+
     &-hamburguer-checkbox:checked ~ &-menu {
         width: 100%;
         opacity: 1;
