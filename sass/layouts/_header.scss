@@ -12,5 +12,6 @@
     @include respond(tab-port) {
         background-image: url(../../img/header-background-grande.png);
         background-position: center;
+        height: 95vh;
     }
 }
