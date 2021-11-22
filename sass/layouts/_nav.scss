@@ -1,5 +1,5 @@
 .header_navbar {
-    min-width: 100%; //por alguna razón con min-width no se rompe todo al ponerle position fixed
+    width: 100%; //por alguna razón con min-width no se rompe todo al ponerle position fixed
     height: 11.2rem;
 
     display: flex;
@@ -171,7 +171,7 @@
         width: 0;
         display: none;
 
-        transition: all 1s ease 1s;
+        transition: all 1s;
 
         &--list {
             background-image: linear-gradient(85deg, $color-black, transparent);
@@ -210,7 +210,7 @@
             }
         }
     }
-
+    //links redes sociales del menú desplegable
     .link2 {
         margin: 0 1.5rem;
     }

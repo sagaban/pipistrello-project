@@ -2,12 +2,16 @@
     max-width: 100%;
     height: 100vh;
 
-    background-image: url(../../img/header-image.png); //falta agregarle las sombras sombras
+    background-image: url(../../img/header-image.png); //falta agregarle las sombras cuando haga el header
     //background-color: $color-blue-dark; (ponerlo cuando haga el poligono)
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     filter: brightness(1.5);
+
+    @include respond(desk-top) {
+        filter: none;
+    }
 
     @include respond(tab-port) {
         background-image: url(../../img/header-background-grande.png);
