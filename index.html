@@ -1,18 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <title>Pipistrello - A full landing page</title>
-    </head>
-    <body>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Pipistrello - A full landing page</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+
+        <!--HEADER NAVBAR-->
+        <div class="header_navbar">
+
+            <!--Menú Desktop-->
+            <nav class="header_navbar-menu2">
+                <ul class="header_navbar-menu2--list">
+                    <li class="header_navbar-menu2--list-item">
+                        <a href="#" class="link">Home</a>
+                    </li>
+                    <li class="header_navbar-menu2--list-item">
+                        <a href="#" class="link">Product</a>
+                    </li>
+                    <li class="header_navbar-menu2--list-item">
+                        <a href="#" class="link">Pricing</a>
+                    </li>
+                    <li class="header_navbar-menu2--list-item">
+                        <a href="#" class="link">About</a>
+                    </li>
+                    <li class="header_navbar-menu2--list-item">
+                        <a href="#" class="link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--Logo-->
+            <div class="header_navbar-logo--box">
+                <img src="img/logo.png" alt="logo" class="header_navbar-logo">
+            </div>
+
+            <!--SVG Redes-->
+            <nav class="header_navbar-user">
+                <div class="header_navbar-user-icon--box">
+                    <a href="#">
+                        <svg class="header_navbar-user-icon">
+                            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="header_navbar-user-icon--box">
+                    <a href="#">
+                        <svg class="header_navbar-user-icon">
+                            <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="header_navbar-user-icon--box">
+                    <a href="#">
+                        <svg class="header_navbar-user-icon">
+                            <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+
+            <!--Hamburguesa-->
+            <div class="header_navbar-hamburguer">
+                <input type="checkbox" class="header_navbar-hamburguer-checkbox" id="toggle" />
+                <label for="toggle" class="navigation-button">
+                    <span class="navigation-line line-1"></span>
+                    <span class="navigation-line line-2"></span>
+                    <span class="navigation-line line-3"></span>
+                </label>
+
+                <!--Menú desplegable-->
+                <nav class="header_navbar-menu">
+                    <ul class="header_navbar-menu--list">
+                        <li class="header_navbar-menu--list-item">
+                            <a href="#" class="link">Home</a>
+                        </li>
+                        <li class="header_navbar-menu--list-item">
+                            <a href="#" class="link">Product</a>
+                        </li>
+                        <li class="header_navbar-menu--list-item">
+                            <a href="#" class="link">Pricing</a>
+                        </li>
+                        <li class="header_navbar-menu--list-item">
+                            <a href="#" class="link">About</a>
+                        </li>
+                        <li class="header_navbar-menu--list-item">
+                            <a href="#" class="link">Contact</a>
+                        </li>
+                        <li class="header_navbar-menu--list-item">
+
+                            <a href="#" class="link link2">
+                                <svg class="header_navbar-user-icon">
+                                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link link2">
+                                <svg class="header_navbar-user-icon">
+                                    <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link link2">
+                                <svg class="header_navbar-user-icon">
+                                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
 
 
-    </body>
+
+
+        </div>
+
+
+        <!--HEADER CONTENT-->
+        <div class="header_content">
+
+        </div>
+    </header>
+
+</body>
+
 </html>
