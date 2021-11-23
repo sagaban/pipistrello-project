@@ -10,7 +10,10 @@
     position: fixed;
 
     @include respond(desk-top) {
-        justify-content: end;
+        justify-content: space-around;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
     }
 
     /////////////////LOGO
@@ -51,8 +54,6 @@
         @include respond(desk-top) {
             width: 17rem;
             opacity: 1;
-            margin-left: 33%;
-            transform: translate(-33%);
         }
 
         &--box {
