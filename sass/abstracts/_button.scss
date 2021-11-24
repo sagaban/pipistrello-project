@@ -1,0 +1,40 @@
+.btn {
+    background-color: $color-blue-light2;
+    width: 236px;
+
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: 16px 0px;
+        display: inline-block;
+        border-radius: 35px;
+        text-align: center;
+
+        transition: all 0.2s;
+
+        font-size: 20px;
+        line-height: 20px;
+
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(black, 0.4);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:focus,
+    &:active {
+        outline: none;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(black, 0.4);
+    }
+}
