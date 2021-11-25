@@ -1,4 +1,5 @@
 .header {
+    //Background image
     max-width: 100%;
     height: 100vh;
 
@@ -6,15 +7,33 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: brightness(1.5);
-
-    @include respond(desk-top) {
-        filter: none;
-    }
 
     @include respond(tab-port) {
         background-image: url(../../img/header-background-grande.png);
         background-position: center;
-        height: 95vh;
+    }
+
+    //Content
+    &_content {
+        margin: 0 auto;
+        padding-top: 19.5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 37.8rem;
+        height: 69rem;
+
+        @include respond(desk-top) {
+            width: 67.2rem;
+            height: 16.8rem;
+            padding: 15.5rem;
+        }
+
+        & > h4,
+        h2 {
+            margin-bottom: 3rem;
+        }
     }
 }
