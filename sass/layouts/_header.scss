@@ -8,10 +8,6 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include respond(desk-top) {
-        filter: none;
-    }
-
     @include respond(tab-port) {
         background-image: url(../../img/header-background-grande.png);
         background-position: center;
@@ -28,6 +24,12 @@
 
         width: 37.8rem;
         height: 69rem;
+
+        @include respond(desk-top) {
+            width: 67.2rem;
+            height: 16.8rem;
+            padding: 15.5rem;
+        }
 
         & > h4,
         h2 {
