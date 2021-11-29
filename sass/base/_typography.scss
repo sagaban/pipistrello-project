@@ -2,6 +2,7 @@ body {
     font-family: "Work Sans", sans-serif;
 } /*Font-size: lo hemos definido en el archivo _base.scss en el html element*/
 
+//<h2>
 .heading_primary {
     font-size: 4.8rem;
     font-weight: 400;
@@ -24,8 +25,19 @@ body {
     @include respond(tab-port) {
         font-weight: bold;
     }
+
+    &--feature {
+        font-size: 4.8rem;
+        font-weight: 400;
+        line-height: 5.5rem;
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        color: $color-blue-dark2;
+    }
 }
 
+//<h4>
 .heading_secondary {
     font-size: 2.8rem;
     font-weight: 200;
@@ -57,6 +69,32 @@ body {
             width: 77rem;
         }
     }
+
+    &--feature {
+        font-size: 2.8rem;
+        font-weight: 200;
+        line-height: 4rem;
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        color: $color-blue-dark2;
+    }
+}
+
+//<h3>
+.heading_tertiary {
+    color: $color-blue-dark;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+}
+
+.paragraph {
+    font-size: 1.8rem;
+    color: $color-blue-dark;
+    letter-spacing: 0.2px;
+    line-height: 2.5rem;
 }
 
 /*
