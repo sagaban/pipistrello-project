@@ -3,7 +3,7 @@ body {
 } /*Font-size: lo hemos definido en el archivo _base.scss en el html element*/
 
 //<h2>
-.heading_primary {
+.h2 {
     font-size: 4.8rem;
     font-weight: 400;
     line-height: 5.5rem;
@@ -25,20 +25,13 @@ body {
     @include respond(tab-port) {
         font-weight: bold;
     }
-
-    &--feature {
-        font-size: 4.8rem;
-        font-weight: 400;
-        line-height: 5.5rem;
-        text-align: center;
-        letter-spacing: 0.2px;
-
-        color: $color-blue-dark2;
-    }
+}
+.feature2 {
+    color: $color-blue-dark2;
 }
 
 //<h4>
-.heading_secondary {
+.h4 {
     font-size: 2.8rem;
     font-weight: 200;
     line-height: 4rem;
@@ -53,36 +46,26 @@ body {
     @include respond(tab-land) {
         width: 37rem;
     }
+}
+.desktop4 {
+    display: none;
 
-    &--desktop {
-        display: none;
-
-        font-size: 2.8rem;
-        font-weight: 200;
-        line-height: 4rem;
-        text-align: center;
-        letter-spacing: 0.2px;
-        color: $color-white;
-
-        @include respond(desk-top) {
-            display: unset;
-            width: 77rem;
-        }
+    @include respond(desk-top) {
+        display: unset;
+        width: 77rem;
     }
+}
 
-    &--feature {
-        font-size: 2.8rem;
-        font-weight: 400;
-        line-height: 4rem;
-        text-align: center;
-        letter-spacing: 0.2px;
+.feature4 {
+    color: $color-blue-dark2;
 
-        color: $color-blue-dark2;
+    @include respond(desk-top) {
+        display: unset;
     }
 }
 
 //<h3>
-.heading_tertiary {
+.h3 {
     color: $color-blue-dark2;
     font-size: 2rem;
     line-height: 2.8rem;
