@@ -1,0 +1,85 @@
+.feature {
+    height: 159.5rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & h4,
+    h3,
+    p {
+        margin-top: 2rem;
+    }
+
+    &_title {
+        width: 28.5rem;
+        height: 18.2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include respond(desk-top) {
+            width: 55.2rem;
+        }
+    }
+
+    &_video {
+        @include respond(desk-top) {
+            order: 1;
+        }
+
+        &-mp4 {
+            @include respond(desk-top) {
+                display: none;
+            }
+        }
+
+        &-mp4--desk {
+            display: none;
+
+            @include respond(desk-top) {
+                display: unset;
+            }
+        }
+    }
+
+    &_items {
+        width: 22.5rem;
+        height: 92.4rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond(desk-top) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            width: 90.5rem;
+            height: 25.7rem;
+        }
+
+        &-box {
+            @include respond(desk-top) {
+                width: 25.5rem;
+                height: 25.5rem;
+            }
+        }
+
+        &-svg {
+            width: 4rem;
+            height: 6rem;
+            fill: $color-blue-light;
+        }
+    }
+}
+
+video {
+    border-radius: 2.4rem;
+    filter: drop-shadow(1px 1px 6px $color-blue-dark);
+}

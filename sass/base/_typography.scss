@@ -2,7 +2,8 @@ body {
     font-family: "Work Sans", sans-serif;
 } /*Font-size: lo hemos definido en el archivo _base.scss en el html element*/
 
-.heading_primary {
+//<h2>
+.h2 {
     font-size: 4.8rem;
     font-weight: 400;
     line-height: 5.5rem;
@@ -25,8 +26,12 @@ body {
         font-weight: bold;
     }
 }
+.feature2 {
+    color: $color-blue-dark2;
+}
 
-.heading_secondary {
+//<h4>
+.h4 {
     font-size: 2.8rem;
     font-weight: 200;
     line-height: 4rem;
@@ -41,22 +46,38 @@ body {
     @include respond(tab-land) {
         width: 37rem;
     }
+}
+.desktop4 {
+    display: none;
 
-    &--desktop {
-        display: none;
-
-        font-size: 2.8rem;
-        font-weight: 200;
-        line-height: 4rem;
-        text-align: center;
-        letter-spacing: 0.2px;
-        color: $color-white;
-
-        @include respond(desk-top) {
-            display: unset;
-            width: 77rem;
-        }
+    @include respond(desk-top) {
+        display: unset;
+        width: 77rem;
     }
+}
+
+.feature4 {
+    color: $color-blue-dark2;
+
+    @include respond(desk-top) {
+        display: unset;
+    }
+}
+
+//<h3>
+.h3 {
+    color: $color-blue-dark2;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+}
+
+.paragraph {
+    font-size: 1.8rem;
+    color: $color-blue-dark;
+    letter-spacing: 0.2px;
+    line-height: 2.5rem;
 }
 
 /*
