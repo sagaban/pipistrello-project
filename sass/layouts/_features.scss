@@ -27,6 +27,7 @@
     }
 
     &_video {
+        z-index: 1;
         @include respond(desk-top) {
             order: 1;
         }
