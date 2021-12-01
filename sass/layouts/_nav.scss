@@ -1,7 +1,7 @@
 .header_navbar {
     width: 100%; //por alguna razón con min-width no se rompe todo al ponerle position fixed
     height: 11.2rem;
-    background-image: linear-gradient(to top, #3747540d, #142f55e6);
+    background-image: linear-gradient(to top, transparent, $color-blue-dark);
 
     display: flex;
     flex-wrap: nowrap;
@@ -171,8 +171,7 @@
         transition: all 1s;
 
         &--list {
-            background-color: $color-blue-dark2;
-            background-image: linear-gradient(to top, $color-black, #2d3f53);
+            background-color: $color-blue-light;
             width: 100%;
             margin-top: -2.5rem;
 

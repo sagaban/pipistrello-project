@@ -1,6 +1,5 @@
 .btn {
     background-color: $color-blue-light;
-    background-image: linear-gradient(to top, #000000fa, #3686f7);
     width: 236px;
     margin-top: 5rem;
 
@@ -33,6 +32,5 @@
         transform: translateY(-0.1rem);
         box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
         background-color: $color-pink;
-        background-image: linear-gradient(to top, #000000fa, $color-pink);
     }
 }
