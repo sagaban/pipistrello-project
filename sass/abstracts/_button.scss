@@ -1,6 +1,7 @@
 .btn {
     background-color: $color-blue-light;
-    width: 236px;
+    width: 23.6rem;
+    margin-top: 5rem;
 
     transition: all 0.2s;
 
@@ -32,4 +33,8 @@
         box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
         background-color: $color-pink;
     }
+}
+
+.btn-large {
+    width: 35.3rem;
 }
