@@ -10,6 +10,7 @@ body {
     text-align: center;
     letter-spacing: 0.2px;
     color: $color-white;
+    margin-bottom: 2rem;
 
     @include respond(desk-top) {
         font-size: 7.4rem;
@@ -26,8 +27,11 @@ body {
         font-weight: bold;
     }
 }
-.feature2 {
+
+.feature2,
+.hero2 {
     color: $color-blue-dark2;
+    font-weight: normal;
 }
 
 //<h4>
@@ -44,9 +48,10 @@ body {
     }
 
     @include respond(tab-land) {
-        width: 37rem;
+        width: 38rem;
     }
 }
+
 .desktop4 {
     display: none;
 
@@ -56,11 +61,18 @@ body {
     }
 }
 
-.feature4 {
+.feature4,
+.hero4 {
     color: $color-blue-dark2;
 
-    @include respond(desk-top) {
-        display: unset;
+    &-desk {
+        display: none;
+
+        @include respond(desk-top) {
+            color: $color-blue-dark2;
+            display: unset;
+            width: 56rem;
+        }
     }
 }
 
