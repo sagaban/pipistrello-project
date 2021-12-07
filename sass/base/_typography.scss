@@ -28,11 +28,25 @@ body {
     }
 }
 
+.phone2 {
+    @include respond(desk-top) {
+        display: none;
+    }
+}
+
 .feature2,
 .hero2,
 .news2 {
     color: $color-blue-dark2;
     font-weight: normal;
+}
+
+.desk2 {
+    display: none;
+
+    @include respond(desk-top) {
+        display: unset;
+    }
 }
 
 //<h4>
