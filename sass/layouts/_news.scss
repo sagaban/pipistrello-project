@@ -36,12 +36,6 @@
         @include respond(desk-top) {
             order: 1;
         }
-
-        &--desk {
-            @include respond(desk-top) {
-                width: ;
-            }
-        }
     }
 
     &_form {
