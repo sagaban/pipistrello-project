@@ -41,6 +41,12 @@ body {
     font-weight: normal;
 }
 
+.hero2-left {
+    @include respond(desk-top) {
+        text-align: left;
+    }
+}
+
 .desk2 {
     display: none;
 
@@ -89,6 +95,7 @@ body {
             color: $color-blue-dark2;
             display: unset;
             width: 56rem;
+            text-align: left;
         }
     }
 }
