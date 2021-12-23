@@ -46,6 +46,7 @@ body {
 
     @include respond(desk-top) {
         display: unset;
+        text-align: left;
     }
 }
 
