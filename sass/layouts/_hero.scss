@@ -20,10 +20,15 @@
         justify-content: space-between;
         align-items: center;
 
+        @include respond(tab-land) {
+            justify-content: space-evenly;
+        }
+
         @include respond(desk-top) {
             width: 56.2rem;
             height: 35rem;
             align-items: flex-start;
+            justify-content: space-between;
         }
     }
 

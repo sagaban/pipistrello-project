@@ -35,6 +35,15 @@
 
         @include respond(desk-top) {
             order: 1;
+            width: 50rem;
+            height: 50rem;
+        }
+
+        &--desk {
+            @include respond(desk-top) {
+                width: 50rem;
+                height: 50rem;
+            }
         }
     }
 
@@ -49,7 +58,7 @@
 
         @include respond(desk-top) {
             max-height: 15.1rem;
-            width: 56.3rem;
+            width: 56.5rem;
             flex-wrap: wrap;
             justify-content: flex-end;
             align-items: start;
