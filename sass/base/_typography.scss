@@ -28,10 +28,32 @@ body {
     }
 }
 
+.phone2 {
+    @include respond(desk-top) {
+        display: none;
+    }
+}
+
 .feature2,
-.hero2 {
+.hero2,
+.news2 {
     color: $color-blue-dark2;
     font-weight: normal;
+}
+
+.hero2-left {
+    @include respond(desk-top) {
+        text-align: left;
+    }
+}
+
+.desk2 {
+    display: none;
+
+    @include respond(desk-top) {
+        display: unset;
+        text-align: left;
+    }
 }
 
 //<h4>
@@ -62,7 +84,8 @@ body {
 }
 
 .feature4,
-.hero4 {
+.hero4,
+.news4 {
     color: $color-blue-dark2;
 
     &-desk {
@@ -72,6 +95,7 @@ body {
             color: $color-blue-dark2;
             display: unset;
             width: 56rem;
+            text-align: left;
         }
     }
 }
