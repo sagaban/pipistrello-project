@@ -1,0 +1,45 @@
+.partner {
+    margin: 0 auto;
+    width: 37.8rem;
+    height: 69rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &_slider {
+        height: 20rem;
+        width: 38rem;
+        display: flex;
+        gap: 15rem;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+
+        &-track {
+            animation: scroll 25s linear infinite;
+            width: calc(250px * 14);
+
+            &--slide {
+                height: 9rem;
+                width: 22.5rem;
+            }
+        }
+    }
+}
+
+.item {
+    width: 22.5rem;
+    height: 9rem;
+}
+
+// Animation
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 7));
+    }
+}

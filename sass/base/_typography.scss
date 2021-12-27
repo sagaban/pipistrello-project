@@ -100,6 +100,14 @@ body {
     }
 }
 
+.partner4 {
+    color: $color-blue-dark2;
+
+    @include respond(desk-top) {
+        display: unset;
+    }
+}
+
 //<h3>
 .h3 {
     color: $color-blue-dark2;
