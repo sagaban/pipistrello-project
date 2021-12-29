@@ -23,6 +23,14 @@
         align-items: center;
         justify-content: space-around;
 
+        @include respond(tab-port) {
+            width: 38.5rem;
+        }
+
+        @include respond(tab-land) {
+            width: 56.5rem;
+        }
+
         @include respond(desk-top) {
             align-items: start;
             width: 56.5rem;

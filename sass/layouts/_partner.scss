@@ -1,6 +1,6 @@
 .partner {
     margin: 0 auto;
-    width: 37.8rem;
+    width: 35.5rem;
     height: 69rem;
 
     display: flex;
@@ -8,13 +8,37 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @include respond(tab-port) {
+        width: 38.5rem;
+    }
+
+    @include respond(tab-land) {
+        width: 56.5rem;
+    }
+
+    @include respond(desk-top) {
+        width: 96rem;
+    }
+
     &_slider {
         height: 20rem;
-        width: 37.8rem;
+        width: 35.5rem;
 
         display: flex;
         align-items: center;
         overflow: hidden;
+
+        @include respond(tab-port) {
+            width: 38.5rem;
+        }
+
+        @include respond(tab-land) {
+            width: 56.5rem;
+        }
+
+        @include respond(desk-top) {
+            width: 96rem;
+        }
 
         &-track {
             display: flex;
@@ -32,6 +56,10 @@
 .item {
     width: 18rem;
     height: 7rem;
+
+    @include respond(desk-top) {
+        height: 9rem;
+    }
 }
 
 // Animation
