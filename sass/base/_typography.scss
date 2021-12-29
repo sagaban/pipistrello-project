@@ -106,6 +106,8 @@ body {
 }
 
 .hero4-desk--left {
+    display: none;
+
     @include respond(desk-top) {
         color: $color-blue-dark2;
         display: unset;
