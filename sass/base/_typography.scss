@@ -20,7 +20,7 @@ body {
 
     @include respond(tab-land) {
         font-weight: bold;
-        width: 56rem;
+        width: 56.5rem;
     }
 
     @include respond(tab-port) {
@@ -56,6 +56,12 @@ body {
     }
 }
 
+.partner2 {
+    @include respond(desk-top) {
+        width: 96rem;
+    }
+}
+
 //<h4>
 .h4 {
     font-size: 2.8rem;
@@ -65,12 +71,12 @@ body {
     letter-spacing: 0.2px;
     color: $color-white;
 
-    @include respond(desk-top) {
-        display: none;
+    @include respond(tab-land) {
+        width: 56.5rem;
     }
 
-    @include respond(tab-land) {
-        width: 38rem;
+    @include respond(desk-top) {
+        display: none;
     }
 }
 
@@ -95,8 +101,32 @@ body {
             color: $color-blue-dark2;
             display: unset;
             width: 56rem;
-            text-align: left;
         }
+    }
+}
+
+.hero4-desk--left {
+    display: none;
+
+    @include respond(desk-top) {
+        color: $color-blue-dark2;
+        display: unset;
+        width: 56rem;
+        text-align: left;
+    }
+}
+
+.partner4 {
+    color: $color-blue-dark2;
+    font-size: 2.8rem;
+    font-weight: 200;
+    line-height: 4rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    @include respond(desk-top) {
+        width: 56rem;
+        margin: 0 auto;
     }
 }
 
@@ -107,6 +137,10 @@ body {
     line-height: 2.8rem;
     letter-spacing: 0.1px;
     font-weight: 700;
+
+    @include respond(tab-land) {
+        font-size: 2.2rem;
+    }
 }
 
 .paragraph {
