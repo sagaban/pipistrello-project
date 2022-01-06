@@ -8,6 +8,14 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @include respond(tab-land) {
+        width: 56.5rem;
+    }
+
+    @include respond(tab-land) {
+        width: 67.5rem;
+    }
+
     &_msg {
         width: 29.6rem;
         height: 25rem;
@@ -16,6 +24,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+
+        @include respond(tab-land) {
+            width: 51.6rem;
+        }
+
+        @include respond(desk-top) {
+            width: 55.5rem;
+        }
 
         &-client {
             width: 12.8rem;

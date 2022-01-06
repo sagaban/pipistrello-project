@@ -26,6 +26,10 @@
         width: 38.5rem;
         height: 69rem;
 
+        @include respond(tab-land) {
+            width: 56.5rem;
+        }
+
         @include respond(desk-top) {
             width: 67.2rem;
             height: 16.8rem;
