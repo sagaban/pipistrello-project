@@ -10,7 +10,6 @@ body {
     text-align: center;
     letter-spacing: 0.2px;
     color: $color-white;
-    margin-bottom: 2rem;
 
     @include respond(desk-top) {
         font-size: 7.4rem;
@@ -70,6 +69,7 @@ body {
     text-align: center;
     letter-spacing: 0.2px;
     color: $color-white;
+    margin-top: 2rem;
 
     @include respond(tab-land) {
         width: 56.5rem;
@@ -93,6 +93,7 @@ body {
 .hero4,
 .news4 {
     color: $color-blue-dark2;
+    margin-top: 2rem;
 
     &-desk {
         display: none;
@@ -123,6 +124,7 @@ body {
     line-height: 4rem;
     text-align: center;
     letter-spacing: 0.2px;
+    margin-top: 2rem;
 
     @include respond(desk-top) {
         width: 56rem;
@@ -132,14 +134,14 @@ body {
 
 .testimonial4 {
     color: $color-blue-dark2;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: Lato;
     letter-spacing: 0.17px;
-    line-height: 16px;
+    line-height: 19px;
     text-align: center;
 
-    width: 28rem;
+    width: 29.5rem;
 }
 
 //<h3>
