@@ -20,6 +20,14 @@
         width: 96rem;
     }
 
+    &_title-sub {
+        @include respond(desk-top) {
+            width: 56rem;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+
     &_slider {
         height: 20rem;
         width: 35.5rem;
