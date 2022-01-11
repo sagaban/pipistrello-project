@@ -1,3 +1,74 @@
 .pricing {
     background-color: #252b42;
+    height: 240rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 28rem;
+    }
+
+    &_items {
+        width: 33.5rem;
+        height: 195rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        &-card {
+            width: 33.5rem;
+            height: 60.7rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem;
+
+            border-radius: 1rem;
+            background-color: white;
+            justify-content: flex-start;
+
+            gap: 3rem;
+        }
+    }
+}
+
+.card-title {
+    text-align: center;
+    width: 14.4rem;
+}
+
+.card-price {
+    display: flex;
+    gap: 1rem;
+
+    &--text {
+        text-align: center;
+
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+.list {
+    width: 25.5rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.color-card {
+    background-color: $color-blue-light;
 }
