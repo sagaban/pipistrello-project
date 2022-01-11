@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @include respond(desk-top) {
+        height: 115rem;
+    }
+
     &_title {
         display: flex;
         flex-direction: column;
@@ -21,6 +25,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+
+        @include respond(desk-top) {
+            width: 110rem;
+            height: 69.3rem;
+            flex-direction: row;
+        }
 
         &-card {
             width: 33.5rem;
@@ -71,4 +81,9 @@
 
 .color-card {
     background-color: $color-blue-light;
+
+    @include respond(desk-top) {
+        height: 69.3rem;
+        justify-content: center;
+    }
 }
