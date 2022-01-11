@@ -466,28 +466,34 @@
         </div>
 
         <div class="contact_items">
-            <svg class="header_navbar-user-icon">
-                <use xlink:href="img/sprite.svg#icon-location2"></use>
-            </svg>
-            <h6>6386 Spring St undefied Anchorage, Georgia 12473 United States</h6>
-            <svg class="header_navbar-user-icon">
-                <use xlink:href="img/sprite.svg#icon-mobile2"></use>
-            </svg>
-            <h6>(458) 595-7620</h6>
-            <svg class="header_navbar-user-icon">
-                <use xlink:href="img/sprite.svg#icon-mail2"></use>
-            </svg>
-            <h6>willi.jennings@example.com</h6>
+            <div class="adress">
+                <svg class="header_navbar-user-icon">
+                    <use xlink:href="img/sprite.svg#icon-location2"></use>
+                </svg>
+                <h6>6386 Spring St undefied Anchorage, Georgia 12473 United States</h6>
+            </div>
+            <div class="phone">
+                <svg class="header_navbar-user-icon">
+                    <use xlink:href="img/sprite.svg#icon-mobile2"></use>
+                </svg>
+                <h6>(458) 595-7620</h6>
+            </div>
+            <div class="mail">
+                <svg class="header_navbar-user-icon">
+                    <use xlink:href="img/sprite.svg#icon-mail2"></use>
+                </svg>
+                <h6>willi.jennings@example.com</h6>
+            </div>
         </div>
 
         <div class="contact_form">
             <h3>Contact Us</h3>
-            <form action="#">
+            <form class="contact_form-box" action="#">
                 <input type="text" placeholder="Your Name" class="news_form-input">
-                <input type="text" placeholder="Your Email" class="news_form-input">
+                <input type="email" placeholder="Your Email" class="news_form-input">
                 <input type="text" placeholder="Your Message" class="news_form-input">
                 <div class="pricing_items-btn">
-                    <button class="btn btn-small">Order Now</button>
+                    <button class="btn btn-small" type="submit" action="#">Send</button>
                 </div>
             </form>
         </div>
