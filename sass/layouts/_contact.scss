@@ -12,19 +12,17 @@
         width: 37.5rem;
         height: 66.9rem;
 
-        box-shadow: 0px 8px 20px 5px #8d919545;
-        border-radius: 10px;
+        box-shadow: 0px 13px 19px 0px #00000012;
+        border: 1px solid #dddddd;
+        border-radius: 2rem;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
 
-        &-box {
-        }
-
         &-box--input {
-            width: 35.3rem;
+            width: 28rem;
             height: 5.4rem;
             border: none;
             background-color: #f0f0f0;
@@ -44,7 +42,7 @@
         list-style: none;
     }
 
-    label {
+    .form_label {
         visibility: hidden;
         position: absolute;
     }
