@@ -240,8 +240,8 @@
         <div class="news_form">
             <h3>Subscribe to our Newsletter</h3>
             <p>Available exclusively at Figmaland</p>
-            <form action="#" method="post">
-                <label for="email" class="form_label">Your Email</label>
+            <form action="#" method="post" autocomplete="off">
+                <label for="email" class="contact_form-label">Your Email</label>
                 <input type="text" id="email" placeholder="Your email" class="news_form-input">
             </form>
             <button class="btn btn-large">Subsbribe</button>
@@ -441,25 +441,25 @@
         </div>
 
         <div class="contact_social">
-            <div class="header_navbar-user-icon--box">
+            <div class="contact_social-icon--box">
                 <a href="#">
-                    <svg class="header_navbar-user-icon">
+                    <svg class="contact_social-icon">
                         <use xlink:href="img/sprite.svg#icon-twitter"></use>
                     </svg>
                 </a>
             </div>
 
-            <div class="header_navbar-user-icon--box">
+            <div class="contact_social-icon--box">
                 <a href="#">
-                    <svg class="header_navbar-user-icon">
+                    <svg class="contact_social-icon">
                         <use xlink:href="img/sprite.svg#icon-facebook2"></use>
                     </svg>
                 </a>
             </div>
 
-            <div class="header_navbar-user-icon--box">
+            <div class="contact_social-icon--box">
                 <a href="#">
-                    <svg class="header_navbar-user-icon">
+                    <svg class="contact_social-icon">
                         <use xlink:href="img/sprite.svg#icon-linkedin"></use>
                     </svg>
                 </a>
@@ -467,56 +467,54 @@
         </div>
 
         <div class="contact_items">
-            <div class="adress">
-                <svg class="header_navbar-user-icon">
+            <div class="contact_items-box">
+                <svg class="contact_social-icon">
                     <use xlink:href="img/sprite.svg#icon-location2"></use>
                 </svg>
-                <h6>6386 Spring St undefied Anchorage, Georgia 12473 United States</h6>
+                <h5 class="h5_left">6386 Spring St undefied Anchorage, Georgia 12473 United States</h6>
             </div>
-            <div class="phone">
-                <svg class="header_navbar-user-icon">
+
+            <div class="contact_items-box">
+                <svg class="contact_social-icon">
                     <use xlink:href="img/sprite.svg#icon-mobile2"></use>
                 </svg>
-                <h6>(458) 595-7620</h6>
+                <h5 class="h5_left">(458) 595-7620</h6>
             </div>
-            <div class="mail">
-                <svg class="header_navbar-user-icon">
+
+            <div class="contact_items-box">
+                <svg class="contact_social-icon">
                     <use xlink:href="img/sprite.svg#icon-mail2"></use>
                 </svg>
-                <h6>willi.jennings@example.com</h6>
+                <h5 class="h5_left">willi.jennings@example.com</h6>
             </div>
         </div>
 
         <div class="contact_form">
             <h3>Contact Us</h3>
+
             <!--Form-->
-            <form class="contact_form-box" action="#" method="post">
-                <ul>
-                    <li>
-                        <label for="name" class="form_label">Name:</label>
-                        <input type=text id="name" name="user-name" placeholder="Your Name"
-                            class="contact_form-box--input">
+            <form action="#" method="post" autocomplete="off">
+
+                <ul class="contact_form-ul">
+                    <li class="contact_form-li">
+                        <label for="name" class="contact_form-label">Name:</label>
+                        <input type=text id="name" name="user-name" placeholder="Your Name" class="contact_form-input">
                     </li>
-                    <li>
-                        <label for="email" class="form_label">Email:</label>
+                    <li class="contact_form-li">
+                        <label for="email" class="contact_form-label">Email:</label>
                         <input type="email" id="email" name="user-email" placeholder="Your Email"
-                            class="contact_form-box--input">
+                            class="contact_form-input">
                     </li>
-                    <li>
-                        <label for="msg" class="form_label">Message:</label>
+                    <li class="contact_form-li">
+                        <label for="msg" class="contact_form-label">Message:</label>
                         <textarea id="msg" name="user-message" placeholder="Your Message"
-                            class="contact_form-box--input msg"></textarea>
+                            class="contact_form-input contact_form-input--msg"></textarea>
                     </li>
-                    <li>
+                    <li class="contact_form-li">
                         <button type="submit" action="#" class="btn btn-small">Send</button>
                     </li>
                 </ul>
             </form>
-
-
-
-
-
         </div>
     </div>
 

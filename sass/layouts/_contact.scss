@@ -1,6 +1,6 @@
 .contact {
     width: 35.8rem;
-    height: 136rem;
+    height: 150rem;
     margin: 0 auto;
 
     display: flex;
@@ -19,35 +19,74 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
-        &-box--input {
+        &-ul {
+            list-style: none;
+
+            display: flex;
+            flex-direction: column;
+            height: 50.5rem;
+        }
+
+        &-label {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        &-li {
+            margin-bottom: 5rem;
+        }
+
+        &-input {
             width: 28rem;
             height: 5.4rem;
             border: none;
-            background-color: #f0f0f0;
+            background-color: $color-white-dark;
+            border: 1px solid #e8e8e8;
             padding: 2rem;
             border-radius: 10rem;
             font-family: inherit;
+
+            &--msg {
+                height: 19.3rem;
+                border-radius: 5px;
+                resize: none;
+            }
         }
     }
 
-    .msg {
-        height: 19.3rem;
-        border-radius: 5px;
-        resize: none;
+    &_social {
+        width: 19rem;
+        height: 6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            fill: $color-blue-light;
+            cursor: pointer;
+        }
     }
 
-    ul {
-        list-style: none;
-    }
+    .contact_items {
+        width: 31.9rem;
+        height: 20.8rem;
 
-    .form_label {
-        visibility: hidden;
-        position: absolute;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
 
-    li {
-        margin-bottom: 5rem;
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 31.9rem;
+            height: 20rem;
+        }
     }
 }
