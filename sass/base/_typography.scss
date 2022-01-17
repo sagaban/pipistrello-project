@@ -54,6 +54,10 @@ h2 {
     font-weight: normal;
 }
 
+.h2_normal {
+    font-weight: normal;
+}
+
 .h2_desk-left {
     @include respond(desk-top) {
         text-align: left;
@@ -79,10 +83,6 @@ h4 {
     letter-spacing: 0.2px;
     color: $color-white;
     margin-top: 2rem;
-
-    @include respond(tab-land) {
-        width: 56.5rem;
-    }
 }
 
 .h4_desk-none {
@@ -171,6 +171,12 @@ h5 {
     letter-spacing: 0.1px;
     text-align: center;
     font-weight: normal;
+}
+
+.h5_left {
+    width: 31rem;
+    text-align: left;
+    margin-left: 2rem;
 }
 
 //////////////////////////H6

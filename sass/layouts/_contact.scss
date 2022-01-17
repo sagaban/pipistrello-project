@@ -1,0 +1,92 @@
+.contact {
+    width: 35.8rem;
+    height: 150rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &_form {
+        width: 37.5rem;
+        height: 66.9rem;
+
+        box-shadow: 0px 13px 19px 0px #00000012;
+        border: 1px solid #dddddd;
+        border-radius: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &-ul {
+            list-style: none;
+
+            display: flex;
+            flex-direction: column;
+            height: 50.5rem;
+        }
+
+        &-label {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        &-li {
+            margin-bottom: 5rem;
+        }
+
+        &-input {
+            width: 28rem;
+            height: 5.4rem;
+            border: none;
+            background-color: $color-white-dark;
+            border: 1px solid #e8e8e8;
+            padding: 2rem;
+            border-radius: 10rem;
+            font-family: inherit;
+
+            &--msg {
+                height: 19.3rem;
+                border-radius: 5px;
+                resize: none;
+            }
+        }
+    }
+
+    &_social {
+        width: 19rem;
+        height: 6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            fill: $color-blue-light;
+            cursor: pointer;
+        }
+    }
+
+    &_items {
+        width: 31.9rem;
+        height: 20.8rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 31.9rem;
+            height: 20rem;
+        }
+    }
+}
