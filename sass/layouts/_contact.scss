@@ -8,6 +8,11 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @include respond(desk-top) {
+        width: 122rem;
+        height: 100rem;
+    }
+
     &_form {
         width: 37.5rem;
         height: 66.9rem;
@@ -54,6 +59,12 @@
                 resize: none;
             }
         }
+    }
+
+    &_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &_social {
