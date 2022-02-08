@@ -1,16 +1,41 @@
 .contact {
-    &_mobile-box {
-        width: 35.8rem;
-        height: 150rem;
-        margin: 0 auto;
+    width: 41.8rem;
+    height: 156rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
+    @include respond(desk-top) {
+        width: 144rem;
+        height: 120rem;
+    }
+
+    &_box1 {
+        height: 111rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         @include respond(desk-top) {
-            display: none;
+            flex-direction: row;
+            width: 137rem;
+            height: 75rem;
+        }
+    }
+
+    &_box2 {
+        height: 36rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond(desk-top) {
+            height: 67rem;
+            width: 85rem;
         }
     }
 
@@ -26,6 +51,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+
+        @include respond(desk-top) {
+            width: 46rem;
+            order: -1;
+            height: 75rem;
+        }
 
         &-ul {
             list-style: none;
@@ -54,6 +85,10 @@
             border-radius: 10rem;
             font-family: inherit;
 
+            @include respond(desk-top) {
+                width: 37rem;
+            }
+
             &--msg {
                 height: 19.3rem;
                 border-radius: 5px;
@@ -76,15 +111,16 @@
         align-items: center;
         justify-content: space-between;
 
+        @include respond(desk-top) {
+            order: 2;
+            align-self: self-start;
+        }
+
         &-icon {
             width: 3.5rem;
             height: 3.5rem;
             fill: $color-blue-light;
             cursor: pointer;
-        }
-
-        &-web {
-            align-self: start;
         }
     }
 
@@ -97,6 +133,12 @@
         justify-content: space-around;
         align-items: center;
 
+        @include respond(desk-top) {
+            flex-direction: row;
+            width: 85rem;
+            height: 16rem;
+        }
+
         &-box {
             display: flex;
             align-items: center;
@@ -104,47 +146,21 @@
             width: 31.9rem;
             height: 20rem;
 
-            &--web {
+            @include respond(desk-top) {
+                width: 29rem;
                 flex-direction: column;
                 justify-content: center;
                 gap: 2rem;
             }
         }
-
-        &-web {
-            flex-direction: row;
-            width: 96rem;
-        }
     }
+}
 
-    &_web-box {
-        display: none;
+.web_img {
+    display: none;
 
-        @include respond(desk-top) {
-            display: unset;
-            margin: 0 auto;
-            width: 144rem;
-            height: 110rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-
-        &--1 {
-            display: flex;
-
-            align-items: center;
-            justify-content: space-around;
-            gap: 4rem;
-        }
-        &--2 {
-            order: 1;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-
-            gap: 4rem;
-        }
+    @include respond(desk-top) {
+        display: unset;
+        order: 1;
     }
 }
