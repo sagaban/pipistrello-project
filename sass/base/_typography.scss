@@ -179,6 +179,13 @@ h5 {
     margin-left: 2rem;
 }
 
+.h5_contact {
+    @include respond(desk-top) {
+        text-align: center;
+        width: 27rem;
+        margin-left: 0;
+    }
+}
 //////////////////////////H6
 
 h6 {
