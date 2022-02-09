@@ -13,8 +13,13 @@
     }
 
     @include respond(desk-top) {
-        width: 124.3rem;
+        width: 120rem;
         flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @include respond(big-desk) {
+        width: 124.3rem;
     }
 
     &_box {
