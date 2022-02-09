@@ -1,0 +1,79 @@
+.footer {
+    background-color: $color-blue-dark3;
+    height: 150rem;
+    width: 100%;
+
+    @include respond(tab-land) {
+        height: 85rem;
+    }
+
+    &_content {
+        width: 34.4rem;
+        height: 145rem;
+        padding-top: 8rem;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond(tab-land) {
+            width: 65rem;
+            height: 85rem;
+        }
+
+        &-menu {
+            width: 18.4rem;
+            height: 94.7rem;
+            margin: 0 auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            @include respond(tab-land) {
+                width: 64.4rem;
+                height: 94.7rem;
+                flex-direction: row;
+            }
+
+            &--list {
+                height: 26.7rem;
+                width: 18.4rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    &_list {
+        width: 12.2rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        list-style-type: none;
+        cursor: pointer;
+    }
+}
+
+.icon--white {
+    fill: $color-white;
+}
+
+.box2-footer {
+    justify-content: space-evenly;
+
+    @include respond(tab-land) {
+        height: 84rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
