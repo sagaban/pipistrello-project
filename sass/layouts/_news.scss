@@ -7,11 +7,15 @@
     justify-content: space-evenly;
 
     @include respond(desk-top) {
-        max-height: 74rem;
-        width: 124.3rem;
+        height: 74rem;
+        width: 120rem;
         margin: 0 auto;
         flex-wrap: wrap-reverse;
         justify-content: center;
+    }
+
+    @include respond(big-desk) {
+        width: 124.3rem;
     }
 
     &_title {

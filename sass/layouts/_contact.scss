@@ -8,8 +8,12 @@
     justify-content: space-evenly;
 
     @include respond(desk-top) {
-        width: 144rem;
+        width: 120rem;
         height: 120rem;
+    }
+
+    @include respond(big-desk) {
+        width: 144rem;
     }
 
     &_box1 {
@@ -21,8 +25,12 @@
 
         @include respond(desk-top) {
             flex-direction: row;
-            width: 137rem;
+            width: 115rem;
             height: 75rem;
+        }
+
+        @include respond(big-desk) {
+            width: 137rem;
         }
     }
 
@@ -35,6 +43,10 @@
 
         @include respond(desk-top) {
             height: 67rem;
+            width: 72rem;
+        }
+
+        @include respond(big-desk) {
             width: 85rem;
         }
     }
@@ -53,9 +65,13 @@
         justify-content: space-evenly;
 
         @include respond(desk-top) {
-            width: 46rem;
+            width: 40rem;
             order: -1;
             height: 75rem;
+        }
+
+        @include respond(big-desk) {
+            width: 46rem;
         }
 
         &-ul {
@@ -86,6 +102,10 @@
             font-family: inherit;
 
             @include respond(desk-top) {
+                width: 35rem;
+            }
+
+            @include respond(big-desk) {
                 width: 37rem;
             }
 
@@ -135,8 +155,12 @@
 
         @include respond(desk-top) {
             flex-direction: row;
-            width: 85rem;
+            width: 72rem;
             height: 16rem;
+        }
+
+        @include respond(big-desk) {
+            width: 85rem;
         }
 
         &-box {
@@ -147,10 +171,14 @@
             height: 20rem;
 
             @include respond(desk-top) {
-                width: 29rem;
+                width: 24rem;
                 flex-direction: column;
                 justify-content: center;
                 gap: 2rem;
+            }
+
+            @include respond(big-desk) {
+                width: 29rem;
             }
         }
     }
