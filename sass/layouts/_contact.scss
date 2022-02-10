@@ -94,12 +94,23 @@
         &-input {
             width: 28rem;
             height: 5.4rem;
-            border: none;
+            //border: none;
             background-color: $color-white-dark;
             border: 1px solid #e8e8e8;
             padding: 2rem;
             border-radius: 10rem;
             font-family: inherit;
+
+            border: 3px solid transparent;
+
+            &:focus {
+                outline: none;
+                border: 3px solid $color-blue-light;
+            }
+
+            &:focus:invalid {
+                border: 3px solid $color-pink;
+            }
 
             @include respond(desk-top) {
                 width: 35rem;
