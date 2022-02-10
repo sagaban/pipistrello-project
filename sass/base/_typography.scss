@@ -214,15 +214,23 @@ p {
     font-weight: 400;
 }
 
-/*
-link {
-    font-size: 1.8rem;
+//////////////////////////////////LINKS
+
+.link {
+    font-size: 1.5rem;
     font-weight: 200;
-    color: $color-white;
     text-decoration: none;
+    line-height: 2.8rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+
+    &:hover {
+        color: $color-pink;
+        font-weight: 700;
+    }
 }
 
-button {
+/*button {
     font-size: 2rem;
     line-height: 2rem; 
     font-weight: 400;
