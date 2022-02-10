@@ -141,6 +141,10 @@
             height: 3.5rem;
             fill: $color-blue-light;
             cursor: pointer;
+
+            &:hover {
+                fill: $color-pink;
+            }
         }
     }
 
