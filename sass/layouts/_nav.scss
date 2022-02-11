@@ -259,3 +259,26 @@
         }
     }
 }
+
+.anchor {
+    &_product {
+        position: absolute;
+        top: 83%;
+        visibility: hidden;
+    }
+
+    &_price {
+        position: relative;
+        top: -4%;
+        visibility: hidden;
+    }
+
+    &_about {
+        position: relative;
+        top: -8rem;
+
+        @include respond(desk-top) {
+            top: 4rem;
+        }
+    }
+}
