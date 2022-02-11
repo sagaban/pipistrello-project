@@ -1,0 +1,81 @@
+.partner {
+    margin: 0 auto;
+    width: 35.5rem;
+    height: 75rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include respond(tab-port) {
+        width: 38.5rem;
+    }
+
+    @include respond(tab-land) {
+        width: 56.5rem;
+    }
+
+    @include respond(desk-top) {
+        width: 96rem;
+    }
+
+    &_title-sub {
+        @include respond(desk-top) {
+            width: 56rem;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+
+    &_slider {
+        height: 20rem;
+        width: 35.5rem;
+
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        @include respond(tab-port) {
+            width: 38.5rem;
+        }
+
+        @include respond(tab-land) {
+            width: 56.5rem;
+        }
+
+        @include respond(desk-top) {
+            width: 96rem;
+        }
+
+        &-track {
+            display: flex;
+            animation: scroll 15s linear infinite;
+            width: calc(225px * 10);
+
+            &--slide {
+                height: 9rem;
+                width: 22.5rem;
+            }
+        }
+    }
+}
+
+.item {
+    width: 18rem;
+    height: 7rem;
+
+    @include respond(desk-top) {
+        height: 9rem;
+    }
+}
+
+// Animation
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-225px * 5));
+    }
+}

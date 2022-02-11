@@ -1,0 +1,241 @@
+body {
+    font-family: "Work Sans", sans-serif;
+} /*Font-size: lo hemos definido en el archivo _base.scss en el html element*/
+
+.white {
+    color: $color-white;
+}
+
+//////////////////////////H1
+
+h1 {
+    font-size: 7.4rem;
+    font-weight: bold;
+    line-height: 8.4rem;
+    letter-spacing: 0.2px;
+    color: $color-blue-dark2;
+}
+
+////////////////////////////////H2
+
+h2 {
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 5.5rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $color-white;
+
+    @include respond(tab-port) {
+        font-weight: bold;
+    }
+
+    @include respond(tab-land) {
+        font-weight: bold;
+        width: 56.5rem;
+    }
+
+    @include respond(desk-top) {
+        font-size: 7.4rem;
+        font-weight: bold;
+        line-height: 8.4rem;
+        width: 67.5rem;
+    }
+}
+
+.h2_desk-none {
+    @include respond(desk-top) {
+        display: none;
+    }
+}
+
+.h2_dark {
+    color: $color-blue-dark2;
+    font-weight: normal;
+}
+
+.h2_normal {
+    font-weight: normal;
+}
+
+.h2_desk-left {
+    @include respond(desk-top) {
+        text-align: left;
+    }
+}
+
+.h2_phone-none {
+    display: none;
+
+    @include respond(desk-top) {
+        display: unset;
+        text-align: left;
+    }
+}
+
+.h2_news {
+    width: 50rem;
+}
+
+//////////////////////////////H4
+
+h4 {
+    font-size: 2.8rem;
+    font-weight: 200;
+    line-height: 4rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $color-white;
+    margin-top: 2rem;
+}
+
+.h4_desk-none {
+    @include respond(desk-top) {
+        display: none;
+    }
+}
+
+.h4_desk {
+    display: none;
+
+    @include respond(desk-top) {
+        display: unset;
+        width: 55.2rem;
+    }
+}
+
+.h4_dark {
+    color: $color-blue-dark2;
+    margin-top: 2rem;
+
+    &-desk {
+        display: none;
+
+        @include respond(desk-top) {
+            color: $color-blue-dark2;
+            display: unset;
+            width: 56rem;
+        }
+    }
+}
+
+.h4_desk-left {
+    display: none;
+
+    @include respond(desk-top) {
+        color: $color-blue-dark2;
+        display: unset;
+        width: 56rem;
+        text-align: left;
+    }
+}
+
+.h4_testimonial {
+    color: $color-blue-dark2;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: Lato;
+    letter-spacing: 0.17px;
+    line-height: 19px;
+    text-align: center;
+
+    width: 29.5rem;
+
+    @include respond(tab-land) {
+        width: 46.5rem;
+    }
+
+    @include respond(desk-top) {
+        width: 55.5rem;
+        font-size: 2rem;
+        line-height: 27px;
+    }
+}
+
+/////////////////////////////////H3
+
+h3 {
+    color: $color-blue-dark2;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+
+    @include respond(tab-land) {
+        font-size: 2.2rem;
+    }
+}
+
+//////////////////////////H5
+
+h5 {
+    font-size: 1.5rem;
+    color: $color-blue-dark2;
+    line-height: 2.3rem;
+    letter-spacing: 0.1px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.h5_left {
+    width: 31rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.h5_contact {
+    @include respond(desk-top) {
+        text-align: center;
+        width: 27rem;
+        margin-left: 0;
+    }
+}
+//////////////////////////H6
+
+h6 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.17px;
+    font-weight: 700;
+    color: $color-blue-dark2;
+}
+
+//////////////////////////////////PARAGRAPH
+p {
+    font-size: 1.8rem;
+    color: $color-blue-dark;
+    letter-spacing: 0.2px;
+    line-height: 2.5rem;
+}
+
+.p_small {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+//////////////////////////////////LINKS
+
+.link {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-decoration: none;
+    line-height: 2.8rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+
+    &:hover {
+        color: $color-pink;
+        font-weight: 700;
+    }
+}
+
+/*button {
+    font-size: 2rem;
+    line-height: 2rem; 
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $color-white;
+}
+*/

@@ -1,0 +1,67 @@
+.hero {
+    width: 38.5rem;
+    height: 74rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include respond(tab-land) {
+        width: 56.5rem;
+    }
+
+    @include respond(desk-top) {
+        width: 120rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @include respond(big-desk) {
+        width: 124.3rem;
+    }
+
+    &_box {
+        display: flex;
+        flex-direction: column;
+        height: 31rem;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(tab-land) {
+            justify-content: space-evenly;
+        }
+
+        @include respond(desk-top) {
+            width: 56.2rem;
+            height: 35rem;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+
+    &_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    &_img {
+        width: 37.2rem;
+        height: 22.5rem;
+
+        @include respond(desk-top) {
+            width: 56.2rem;
+            height: 35rem;
+        }
+    }
+
+    &_btn {
+        margin: 0 auto;
+
+        @include respond(desk-top) {
+            margin: 0;
+        }
+    }
+}

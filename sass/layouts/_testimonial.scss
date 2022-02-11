@@ -1,0 +1,54 @@
+.testimonial {
+    width: 35.5rem;
+    height: 70rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include respond(tab-land) {
+        width: 56.5rem;
+    }
+
+    @include respond(tab-land) {
+        width: 67.5rem;
+    }
+
+    &_msg {
+        width: 29.6rem;
+        height: 25rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        @include respond(tab-land) {
+            width: 51.6rem;
+        }
+
+        @include respond(desk-top) {
+            width: 55.5rem;
+        }
+
+        &-client {
+            width: 16.8rem;
+            height: 4.5rem;
+
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &--text {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: space-evenly;
+
+                width: 10rem;
+            }
+        }
+    }
+}
