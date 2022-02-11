@@ -261,24 +261,33 @@
 }
 
 .anchor {
+    visibility: hidden;
+
     &_product {
         position: absolute;
-        top: 83%;
-        visibility: hidden;
+        top: 78%;
+
+        @include respond(desk-top) {
+            top: 96%;
+        }
     }
 
     &_price {
+        top: -8%;
         position: relative;
-        top: -4%;
-        visibility: hidden;
     }
 
     &_about {
-        position: relative;
         top: -8rem;
+        position: relative;
 
         @include respond(desk-top) {
             top: 4rem;
         }
+    }
+
+    &_contact {
+        position: relative;
+        top: -1%;
     }
 }
