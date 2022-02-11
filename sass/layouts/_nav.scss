@@ -198,10 +198,10 @@
                             line-height: 1.5;
                             font-size: 1.8rem;
                         }
-                    }
 
-                    &:active {
-                        color: $color-blue-light;
+                        &:hover {
+                            color: $color-blue-dark3;
+                        }
                     }
                 }
             }
@@ -253,15 +253,43 @@
 
                     &:hover {
                         color: $color-blue-light;
-                        font-weight: 400;
-                    }
-
-                    &:active {
-                        color: $color-blue-light;
-                        font-weight: 400;
                     }
                 }
             }
         }
+    }
+}
+
+.anchor {
+    &_product {
+        position: absolute;
+        top: 78%;
+        visibility: hidden;
+
+        @include respond(desk-top) {
+            top: 96%;
+        }
+    }
+
+    &_price {
+        top: -8%;
+        position: relative;
+        visibility: hidden;
+    }
+
+    &_about {
+        top: -8rem;
+        position: relative;
+        visibility: hidden;
+
+        @include respond(desk-top) {
+            top: 4rem;
+        }
+    }
+
+    &_contact {
+        position: relative;
+        top: -1%;
+        visibility: hidden;
     }
 }
